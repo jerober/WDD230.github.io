@@ -1,14 +1,24 @@
 body {
-    font-size: 3em;
+    font-size: 1em;
+    max-height: 760px;
 }
 
 header, main, footer {
-    max-width: 6rem;
+    max-width: 760px;
     margin: 0 auto;
 }
 
 header, footer {
-    padding: .5rem;
+    padding: 1rem;
     border: 1px solid #a2b29f;
     background-color: #28b5b5;
+    text-align: center;
+}
+
+header img {
+    float: right;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
 }
