@@ -16,3 +16,22 @@ ul {
 li {
     display: inline;
 }
+
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-family: sans-serif;
+    max-width: 300px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.card {
+    width: 320px;
+    box-shadow: 1px 1px 4px #888;
+    border-radius: 3px;
+    background-color: white;
+}
