@@ -7,6 +7,10 @@ body {
     background-color: #e8eae6;
 }
 
+.banner {
+    background-color: #f7fd04;
+}
+
 nav {
     margin: 0 auto;
     max-width: 100%;
@@ -30,10 +34,19 @@ header h1 {
     letter-spacing: 2pt;
 }
 
+.head {
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr;
+}
+
+.name {
+    margin: 2rem 3.5rem 0 3rem;
+}
+
 .slogan{
     font-style: italic;
     font-size: .75rem;
-    margin-left: 2em;
+    margin-left: 2.5em;
 
 }
 header img {
@@ -53,6 +66,11 @@ header img {
 .navigation {
     list-style-type: none;
     padding: 0;
+    background-color: #194552;
+}
+
+.navSection {
+    background-color: #194552;
 }
 
 .navigation li:first-child {
@@ -73,6 +91,7 @@ main h1 {
 }
 .weatherSummary {
     display: flex;
+    justify-content: center;
     margin: 1em;
     padding: .5em;
 }
@@ -82,14 +101,13 @@ main h1 {
 }
 
 .weatherSummary img {
-    position: flex;
-    max-width: 75rem;
-    align-items: center;
+    max-width: 30rem;
 }
+
 .overlay {
     position: absolute;
-    top: 30rem;
-    right: 30rem;
+    top: 25rem;
+    right: 5rem;
     background: #e8eae6;
     border: 2px solid black;
     padding: 2rem;
@@ -105,14 +123,17 @@ main h1 {
     padding: .5em;
 }
 
-.forecastTable th {
+.forecastTable {
+    display: block;
     border: 2px #00303f solid;
-    padding: 0;
+    align-items: center;
+    align-content: center;
     border: 2px
 }
 
 .article {
-    display: flex;
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr;
     color: #e8eae6;
     background-color: #00303f;
     margin: 1em;
@@ -120,13 +141,13 @@ main h1 {
 }
 
 .article img {
-    max-width: 35rem;
+    max-width: 20em;
+    height: 20em;
     margin: 1em;
-
 }
 
 .article p {
-    flex-wrap: wrap;
+    align-items: baseline;
     margin: 1em;
 }
 

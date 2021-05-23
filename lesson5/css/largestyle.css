@@ -17,4 +17,26 @@
         width: 200;
         height: auto;
     }
+
+    .weatherSummary img {
+        max-width: 75rem;
+        max-height: 80%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 30rem;
+        right: 20rem;
+    }
+
+    .article {
+        display: flex;
+    }
+    
+    .article img {
+        max-width: 30em;
+        height: 30em;
+        margin: 1em;
+    }
 }
+
