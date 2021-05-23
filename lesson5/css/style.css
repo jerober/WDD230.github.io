@@ -1,0 +1,143 @@
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #e8eae6;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    color: #e8eae6;
+    background-color: #00303f;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #00303f;
+    justify-content: center;
+    color: #e8eae6;
+}
+
+header h1 {
+    align-content: center;
+    font-size: 1.5rem;
+    margin: 0 0 0 15px;
+    letter-spacing: 2pt;
+}
+
+.slogan{
+    font-style: italic;
+    font-size: .75rem;
+    margin-left: 2em;
+
+}
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.navigation a:link {
+    display: block;
+	padding: 0.75rem;
+    color: #e8eae6;;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation a:hover {
+    color: #00303f;
+    background-color: #e8eae6;
+}
+
+.responsive li {
+    display: block;
+}
+
+main h1 {
+    text-align: center;
+}
+.weatherSummary {
+    display: flex;
+    margin: 1em;
+    padding: .5em;
+}
+
+.weatherSummary h2, p {
+    margin: 0;
+}
+
+.weatherSummary img {
+    position: flex;
+    max-width: 75rem;
+    align-items: center;
+}
+.overlay {
+    position: absolute;
+    top: 30rem;
+    right: 30rem;
+    background: #e8eae6;
+    border: 2px solid black;
+    padding: 2rem;
+    box-shadow: 0 1em 1em 0 black;
+    opacity: .7;
+}
+.forecast {
+    align-content: center;
+    text-align: center;
+    border: 4px #00303f;
+    border-style: solid;
+    margin: 1em;
+    padding: .5em;
+}
+
+.forecastTable th {
+    border: 2px #00303f solid;
+    padding: 0;
+    border: 2px
+}
+
+.article {
+    display: flex;
+    color: #e8eae6;
+    background-color: #00303f;
+    margin: 1em;
+    padding: .5em;
+}
+
+.article img {
+    max-width: 35rem;
+    margin: 1em;
+
+}
+
+.article p {
+    flex-wrap: wrap;
+    margin: 1em;
+}
+
+.contact {
+    text-align: center;
+    border: 4px #00303f;
+    border-style: solid;
+    margin: 1em;
+    padding: .5em;
+}
+
+footer {
+    text-align: center;
+}
