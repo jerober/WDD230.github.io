@@ -14,6 +14,8 @@ main img {
 
 header ul {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     /* flex-flow: column; */
@@ -25,4 +27,18 @@ header ul {
 
 li {
     flex: 1 1 100%;
+}
+
+.navigation a:link {
+    display: block;
+	padding: 0.75rem;
+    color: #e8eae6;;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation a:hover {
+    color: #e8eae6;
+    background-color: #00303f;
 }
