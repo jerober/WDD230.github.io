@@ -86,6 +86,15 @@ header img {
     background-color: #e8eae6;
 }
 
+.active {
+    color: #00303f;
+    background-color: #e8eae6;
+}
+
+.active a:visited {
+    color: #00303f;
+}
+
 .responsive li {
     display: block;
 }
