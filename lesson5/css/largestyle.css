@@ -13,6 +13,10 @@
         display: none;
     }
 
+    .responsive li {
+        display: block;
+    }
+
     .name {
         padding-left: 7rem;
     }

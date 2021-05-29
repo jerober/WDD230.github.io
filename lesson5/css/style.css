@@ -96,7 +96,7 @@ header img {
 }
 
 .responsive li {
-    display: block;
+    display: none;
 }
 
 main h1 {
