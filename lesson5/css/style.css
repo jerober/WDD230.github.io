@@ -57,7 +57,7 @@ header img {
 .navigation a:link {
     display: block;
 	padding: 0.75rem;
-    color: #e8eae6;;
+    color: #e8eae6;
     justify-content: center;
     text-decoration: none;
     font-weight: 600;
@@ -66,12 +66,16 @@ header img {
 .navigation {
     list-style-type: none;
     padding: 0;
-    background-color: #194552;
+    /* background-color: #194552; */
 }
 
-.navSection {
-    background-color: #194552;
+.navigation a:visited {
+    color: #e8eae6;
 }
+
+/* .navSection {
+    background-color: #194552;
+} */
 
 .navigation li:first-child {
     display: block;

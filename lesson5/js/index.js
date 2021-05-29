@@ -6,9 +6,6 @@ hamButton.addEventListener('click', () => {mainNav.classList.toggle('responsive'
 
 window.onresize = () => {if (window.innerWidth > 760) mainNav.classList.remove('responsive')};
 
-//Wayfinder
-const wayfinder = new
-
 //Banner on Fridays
 const currentDate = new Date();
 const weekday = new Array(7);

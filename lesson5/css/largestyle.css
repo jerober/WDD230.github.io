@@ -13,6 +13,10 @@
         display: none;
     }
 
+    .name {
+        padding-left: 7rem;
+    }
+
     header img {
         width: 200;
         height: auto;
