@@ -1,14 +1,12 @@
 
-
-
 // Finding Wind Chill
 
 window.onload = defineWindChill()
 function defineWindChill() {
     
         //Input:
-        let fahrenheit = parseFloat(document.querySelector('.temp').value);
-        let windSpeed = parseFloat(document.querySelector('.windSpeed').value);
+        var fahrenheit = parseFloat(document.querySelector('.temp').textContent);
+        let windSpeed = parseFloat(document.querySelector('.windSpeed').textContent);
 
         //Processing:
         let windChillOutput = windChill(fahrenheit, windSpeed);
@@ -20,11 +18,13 @@ function defineWindChill() {
     function windChill(fahrenheit, windSpeed) {
         // let fahrenheit = parseFloat(document.getElementById('inputBoxOne').value);
         // let windSpeed = parseFloat(document.getElementById('inputBoxTwo').value);
-        let windChillOutput = 35.74 + 0.6215 * fahrenheit - 35.75 * windSpeed ** 0.16 + 0.4275 * fahrenheit * windSpeed ** 0.16
-        if (fahrenheit <= 50 and windSpeed > 3) {
-            return windChillOutput;
-        } else {
-            windChillOutput = 'N/A';
-            return windChillOutput;
+
+        let windChillOutput = "N/A";
+
+        if (fahrenheit <= 50 && windSpeed > 3) {
+            windChillOutput = 35.74 + 0.6215 * fahrenheit - 35.75 * windSpeed ** 0.16 + 0.4275 * fahrenheit * windSpeed ** 0.16
+            windChillOutput = windChillOutput.toFixed(2);
         }
+        return windChillOutput;
+
     }
