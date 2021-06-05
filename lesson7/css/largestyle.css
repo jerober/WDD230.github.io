@@ -1,0 +1,29 @@
+@media only screen and (min-width: 58em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+    .name {
+        padding-left: 7rem;
+    }
+
+    header img {
+        width: 200;
+        height: auto;
+    }
+}
+
