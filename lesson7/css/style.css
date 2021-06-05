@@ -85,6 +85,10 @@ header h1 {
     font-size: .75rem;
 }
 
+picture img:hover{
+box-shadow: 1em black;
+}
+
 
 footer {
     color: #e8eae6;
