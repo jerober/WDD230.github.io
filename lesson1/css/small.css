@@ -1,6 +1,14 @@
 body {
     font-family: 'Quicksand', sans-serif;
     display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    padding: 1rem;
+    border: 1px solid #a2b29f;
+    background-color: #28b5b5;
+    text-align: center;
 }
 
 h1, h2 {
@@ -18,13 +26,11 @@ ul {
 
 }
 
-li {
-    display: inline;
-}
-
-
 img {
-    max-width: 30rem;
+    display: block;
+    margin: 25px auto;
+    max-width: 50%;
+    box-shadow: 1px 1px 4px #888;
 }
 
 p {
@@ -34,21 +40,23 @@ p {
     margin-left: 10px;
 }
 
-/* .responsive {
-    display: block;
-} */
+.responsive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .card {
-    display: flex;
-    flex: 1 1 100%;
+    display: block;
     width: 100%;
     box-shadow: 1px 1px 4px #888;
     border-radius: 3px;
     background-color: white;
-    margin: 10px;
+    margin: 20px;
     align-content: center;
 }
 
-.card h2 {
+.card h2, h3 {
     text-align: center;
+    
 }
