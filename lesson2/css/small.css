@@ -37,6 +37,7 @@ li {
 .nav a:link {
     display: block;
 	padding: 20px;
+    color: #e8eae6;
     justify-content: center;
     text-decoration: none;
     font-weight: 600;
