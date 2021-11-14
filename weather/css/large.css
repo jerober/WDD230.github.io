@@ -1,0 +1,9 @@
+@media only screen and (min-width: 60em) {
+    nav ul.responsive {
+        display: flex;
+    }
+
+    .navigation div {
+        display: none;
+    }
+}
