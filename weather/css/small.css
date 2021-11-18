@@ -2,15 +2,19 @@ h1, h2 {
     font-family: 'Roboto Slab', serif;
 }
 
+main h1{
+    text-align: center;
+}
+
 body {
     font-family: 'Jost', sans-serif;
-    background-color: #e8eae6;
+    background-color: #f6f6f6;
 }
 
 nav {
     margin: 0 auto;
     max-width: 100%;
-    background-color: #cfdac8;
+    background-color: #212121;
 
 }
 
@@ -21,7 +25,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color:black;
+    color: #f6f6f6;
     padding: 5%;
 }
 
@@ -32,13 +36,13 @@ nav a:link {
 }
 
 nav a:hover {
-    color: #e8eae6;
-    background-color: rgba(0,0,0,0.3);
+    color: #212121;
+    background-color: #f6f6f6;
 }
 
 nav ul li.active a{
-    color: #e8eae6;
-    background-color: rgba(0,0,0,0.2);
+    color: #212121;
+    background-color: #f6f6f6;
 }
 
 nav ul.responsive {
@@ -49,7 +53,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #cfdac8;
+    color: #f6f6f6;
+    background-color: #212121;
     justify-content: center;
 }
 
@@ -75,29 +80,109 @@ header img {
 }
 
 .weatherSummary {
-    border: 4px #cfdac8;
-    border-style: solid;
+    position: relative;
+    /* border: 4px #212121;
+    border-style: solid; */
     margin: 1em;
     padding: .5em;
+}
+
+.weatherSummary img {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+}
+
+.weatherSummary .overlay {
+    position: absolute;
+    padding: 15px;
+    top: 9rem;
+    left: 5rem;
+    background-color: #f6f6f6;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.weatherSummary p, h2 {
+    margin: 4px;
 }
 
 .forecast {
-    border: 4px #cfdac8;
-    border-style: solid;
+    position: relative;
     margin: 1em;
     padding: .5em;
+    align-content: center;
+}
+
+.forecastTableDays {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.forecastTableTemp {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.forecast p {
+    border: 2px #212121;
+    border-style: solid;
+    padding: 0 1.5rem;
+    margin: 0;
+}
+
+.forecast.responsive {
+    display: none;
 }
 
 .article {
-    border: 4px #cfdac8;
-    border-style: solid;
+    display: block;
+    flex-wrap: nowrap;
+    position: relative;
+    background-color: #212121;
+    color: #f6f6f6;
     margin: 1em;
     padding: .5em;
+    text-align: center;
+}
+
+.article h3 {
+    position: relative;
+}
+
+.article img {
+    position: relative;
+    width: auto;
+    margin: 2rem;
+    height: 400px;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.article p {
+    padding: 3rem;
+    text-align: left;
 }
 
 .contact {
-    border: 4px #cfdac8;
+    border: 4px #212121;
     border-style: solid;
     margin: 1em;
-    padding: .5em;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    padding: 15px;
+    color: #f6f6f6;
+    background-color: #212121;
+    justify-content: center;
+}
+
+footer date {
+    color: #f6f6f6;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f6f6f6;
 }

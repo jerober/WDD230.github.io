@@ -7,102 +7,73 @@ body {
     background-color: #e8eae6;
 }
 
-.banner {
-    background-color: #f7fd04;
-}
-
 nav {
     margin: 0 auto;
     max-width: 100%;
-    color: #e8eae6;
-    background-color: #00303f;
+    background-color: #cfdac8;
 
 }
 
-header {
-    display: flex;
-    align-items: center;
-    background-color: #00303f;
-    justify-content: center;
-    color: #e8eae6;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-header h1 {
-    align-content: center;
-    font-size: 1.5rem;
-    margin: 0 0 0 15px;
-    letter-spacing: 2pt;
-}
-
-.head {
-    display: grid;
-    grid: 1fr 1fr 1fr 1fr;
-}
-
-.name {
-    margin: 2rem 3.5rem 0 3rem;
-}
-
-.slogan{
-    font-style: italic;
-    font-size: .75rem;
-    margin-left: 2.5em;
-
-}.head img {
-    width: 80px;
-    height: auto;
-    float: left;
-    margin: 0;
-}
-
-.navigation a:link {
+nav ul li a {
     display: block;
+    color:black;
+    padding: 5%;
+}
+
+nav a:link {
 	padding: 0.75rem;
-    color: #e8eae6;
-    justify-content: center;
     text-decoration: none;
     font-weight: 600;
 }
 
-.navigation {
-    list-style-type: none;
-    padding: 0;
-    /* background-color: #194552; */
-}
-
-.navigation a:visited {
+nav a:hover {
     color: #e8eae6;
+    background-color: rgba(0,0,0,0.3);
 }
 
-/* .navSection {
-    background-color: #194552;
-} */
-
-.navigation li:first-child {
-    display: block;
+nav ul li.active a{
+    color: #e8eae6;
+    background-color: rgba(0,0,0,0.2);
 }
 
-.navigation a:hover {
-    color: #00303f;
-    background-color: #e8eae6;
-}
-
-.active {
-    color: #00303f;
-    background-color: #e8eae6;
-}
-
-.active a:visited {
-    color: #00303f;
-}
-
-.responsive li {
+nav ul.responsive {
     display: none;
 }
 
-main h1 {
-    text-align: center;
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #cfdac8;
+    justify-content: center;
 }
+
+header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2pt;
+}
+
+.slogan{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: .75rem;
+}
+
+header img {
+    width: 64px;
+    height: auto;
+    padding: 10%;
+}
+
+.navigation div {
+    display: block;
+}
+
 .weatherSummary {
     display: flex;
     justify-content: center;
@@ -171,8 +142,4 @@ main h1 {
     border-style: solid;
     margin: 1em;
     padding: .5em;
-}
-
-footer {
-    text-align: center;
 }

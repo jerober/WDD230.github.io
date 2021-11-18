@@ -6,4 +6,18 @@
     .navigation div {
         display: none;
     }
+
+    .forecast {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .forecast.responsive {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .article p {
+        padding: 6rem 3 3 3rem;
+    }
 }

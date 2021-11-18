@@ -1,20 +1,10 @@
 @media only screen and (min-width: 32.5em) {
-    .navigation {
+    nav ul.responsive {
         display: flex;
     }
-    .navigation li {
-        display: block;
-        flex: 1 1 auto;
-    }
-    .navigation a {
-        text-align: center;
-    }
-    .navigation li:first-child {
-        display: none;
-    }
 
-    .responsive li {
-        display: block;
+    .navigation div {
+        display: none;
     }
 
     header img {
@@ -35,5 +25,4 @@
     .article {
         display: flex;
     }
-    
 }
