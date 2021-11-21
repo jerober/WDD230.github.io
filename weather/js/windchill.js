@@ -12,7 +12,7 @@ function defineWindChill() {
         let windChillOutput = windChill(fahrenheit, windSpeed);
 
         //Output:
-            document.querySelector('.windChill').innerHTML = windChillOutput;
+        document.querySelector('.windChill').innerHTML = windChillOutput;
     }
 
     function windChill(fahrenheit, windSpeed) {
@@ -23,7 +23,7 @@ function defineWindChill() {
 
         if (fahrenheit <= 50 && windSpeed > 3) {
             windChillOutput = 35.74 + 0.6215 * fahrenheit - 35.75 * windSpeed ** 0.16 + 0.4275 * fahrenheit * windSpeed ** 0.16
-            windChillOutput = windChillOutput.toFixed(2);
+            windChillOutput = windChillOutput.fixed(2);
         }
         return windChillOutput;
 

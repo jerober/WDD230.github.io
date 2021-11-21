@@ -39,14 +39,20 @@
     <main>
         <h1>Preston Idaho</h1>
         <div class="weatherSummary">
-            <img src="images/idaho-ariel.jpg" alt="preston-header-img">
+            <picture>
+                <source srcset="images/hero-small.jpg" media="(max-width: 600px">
+                <source srcset="images/hero-medium.jpg" media="(max-width: 800px">
+                <source srcset="images/hero-large.jpg" media="(max-width: 1600px">
+                <img src="images/idaho-ariel.jpg" alt="preston-header-img">
+            </picture>
+            
             <section class="overlay">
                 <h2>Today's Weather</h2>
-                <p>Currently: </p>
-                <p>High: </p>
-                <p>Wind Chill: </p>
-                <p>Humidity: </p>
-                <p>Wind Speed: </p>
+                <p>Currently: <span class="temp">49</span></p>
+                <p>High: 73</p>
+                <p>Wind Chill: <span class="windChill"></span> </p>
+                <p>Humidity: 19%</p>
+                <p>Wind Speed: <span class="windSpeed">14</span> mph</p>
             </section>
         </div>
         <div class="forecast responsive">
@@ -59,16 +65,21 @@
                 <p>Fri</p>
             </div>
             <div class="forecastTableTemp">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>H: 75 L:50</p>
+                <p>H: 81 L:52</p>
+                <p>H: 84 L:55</p>
+                <p>H: 90 L:59</p>
+                <p>H: 93 L:64</p>
             </div>
         </div>
         <div class="article">
             <h3>News</h3>
-            <img src="images/atv.jpg" alt="atv-img">
+            <picture>
+                <source srcset="images/atv-small.jpg" media="(max-width: 400px">
+                <source srcset="images/atv-medium.jpg" media="(max-width: 700px">
+                <source srcset="images/atv-large.jpg" media="(max-width: 1000px">
+                <img src="images/atv.jpg" alt="atv-article-img">
+            </picture>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius et sem mollis pulvinar. Donec semper eros eget dui placerat fringilla. Donec elit ante, faucibus id diam vitae, ornare congue orci. Cras justo justo, suscipit ac congue ac, varius a tortor. Fusce gravida massa eget massa tempor, vel malesuada massa luctus. Praesent sed orci commodo odio cursus gravida. Praesent mollis sapien aliquam, feugiat orci in, maximus ipsum. Nulla facilisi. Donec ullamcorper, mi non auctor ultrices, urna mi gravida ipsum, quis laoreet magna elit in massa. Pellentesque mollis velit at neque auctor, in pulvinar lacus dignissim. Curabitur congue dui quis libero fermentum ultricies. In a convallis felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque non nulla ac velit tristique mattis quis quis urna. Integer ut est efficitur dui laoreet pretium nec sit amet nibh. Morbi ut ullamcorper magna. <a href="https://www.lipsum.com/feed/html">Full Article</a></p>
         </div>
         <div class="contact">
@@ -82,5 +93,6 @@
         &copy; <span> ID Relevents 2021 </span> | Jessica Robertson | <a href="images/attributions"> Attributions</a> | <date></date>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>
