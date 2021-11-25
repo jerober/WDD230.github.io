@@ -3,7 +3,10 @@ h1, h2 {
 }
 
 main h1{
-    text-align: center;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding-top: 15px;
 }
 
 body {
@@ -15,7 +18,6 @@ nav {
     margin: 0 auto;
     max-width: 100%;
     background-color: #212121;
-
 }
 
 nav ul {
@@ -79,21 +81,38 @@ header img {
     display: block;
 }
 
+main {
+    position: relative;
+    align-content: center;
+}
+
 .galleryImg {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
 main img {
     display: flex;
-    flex-direction: row;
-    width: 50%;
+    flex:  1 0 21%;
+    width: 100%;
     height: auto;
+    margin: 15px;
 }
 
 main img:hover {
-    box-shadow: 1px 1px 4px #888;
+    box-shadow: 3px 3px 6px #888;
+}
+
+.imgCaption {
+    display: block;
+    width: 100%;
+    margin: 20px;
+    align-content: center;
+}
+
+.imgCaption p {
+    text-align: center;
+    margin-left: 10px;
 }
 
 footer {
@@ -107,6 +126,7 @@ footer {
 footer date {
     color: #f6f6f6;
 }
+
 
 footer a {
     text-decoration: none;
