@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="weather img gallery">
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <div class="banner"></div>
+        <section class="slogan">
+            <img src="images/sun.png" alt="logo-img">
+            <div>
+                <h1>Idaho Relevents</h1>
+                <p>Your One-Stop News Shop</p>
+            </div>
+        </section>
+        <nav class="navigation">
+            <div onclick="toggleMenu()"><a href="#">&equiv; Menu</a></div>
+            <ul class="responsive">
+                <li><a href="weather/preston.html">Home</a></li>
+                <li><a href="weather/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="lesson4/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Weather Gallery</h1>
+        <div class="galleryImg">
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/city-lights.jpg" alt="city-lights-img">
+            </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/cloud.jpg" alt="cloud-img">
+            </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/dandilion.jpg" alt="dandilion-img">
+            </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/leaves.jpg" alt="fall-leaves-img">
+            </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/lightening.jpg" alt="lightening-img">
+            </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/night-sky.jpg" alt="night-sky-img">
+            </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/snow.jpg" alt="snow-img">
+            </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/sunset-snow.jpg" alt="snow-sunset-img">
+            </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/sunset.jpg" alt="sunset-img">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        &copy; <span> ID Relevents 2021 </span> | Jessica Robertson | <a href="images/attributions"> Attributions</a> | <date></date>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/lazy-load.js" defer></script>
+</body>
+</html>
