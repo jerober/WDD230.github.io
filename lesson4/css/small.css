@@ -77,6 +77,11 @@ header img {
     padding: 10%;
 }
 
+.flexly {
+	display: flex;
+	align-items: center;
+}
+
 .navigation div {
     display: block;
 }
@@ -84,6 +89,11 @@ header img {
 main {
     position: relative;
     align-content: center;
+}
+
+.storm-form {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .galleryImg {

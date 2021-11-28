@@ -23,6 +23,17 @@ if (day == 'friday') {
     document.querySelector(".banner").innerHTML = "Saturday = Preston Pancakes in the Park!  9:00 a.m. @city park pavilion"
 }
 
+//Rating for Storm Severity
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+
+function selectResponse() {
+	const s = document.querySelector('#selected')
+	const sel = document.querySelector('#selectregion');
+	s.style.display = "block";
+	s.textContent = sel.value;
+}
 
 // Date in footer
 const datefield = document.querySelector("date");
@@ -30,3 +41,4 @@ const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", {dateStyle: "full" }).format(now);
 
 datefield.textContent = fulldate;
+
