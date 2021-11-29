@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="storm scenter with form">
+    <meta name="description" content="storm center with form">
     <title>Storm Center</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
@@ -26,70 +26,72 @@
         <nav class="navigation">
             <div onclick="toggleMenu()"><a href="#">&equiv; Menu</a></div>
             <ul class="responsive">
-                <li><a href="weather/preston.html">Home</a></li>
-                <li><a href="weather/preston.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
-                <li class="active"><a href="lesson4/stormcenter.html">Storm Center</a></li>
-                <li><a href="lesson4/gallery-7.html">Gallery</a></li>
+                <li><a href="WDD.230.GITHUB.IO/weather/preston.html">Home</a></li>
+                <li><a href="/weather/preston.html">Preston</a></li>
+                <li class="active"><a href="/lesson4/stormcenter.html">Storm Center</a></li>
+                <li><a href="/lesson4/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Storm Center</h1>
-            <form class="storm-form" action="get" action="thanks.html">
-                <fieldset>
-                    <label> Full Name*<input type="text" name="fname" placeholder="Jane Doe" required></label>
-                    <label> Email<input type="email" name="email" placeholder="someone@email.com" required></label>
-                    <label> Phone<input type="telephone" name="phone" placeholder="123456789098" required></label>
-                    <label>Zipcode <input type="number" name="zipcode" required></label>
-                    <label>Storm Date <input type="date" name="storm-date"></label>
-                    <label>Storm Type <input list="storm-types" name="storm-type">
-                        <datalist id="storm-type">
-                            <option value="Flash Flood"></option>
-                            <option value="Hail"></option>
-                            <option value="Hurricane"></option>
-                            <option value="Thunderstorm"></option>
-                            <option value="Tornado"></option>
+        <div class="formdiv">
+            <h2>Please Fill Out This Form</h2>
+                <form class="storm-form" action="get" action="lesson4/thanks.html">
+                    <fieldset>
+                        <label class="top"> Full Name* <input type="text" name="fname" placeholder="Jane Doe" minlength="5" required></label>
+                        <label class="top"> Email* <input type="email" name="email" placeholder="someone@email.com" required></label>
+                        <label class="top"> Phone* <input type="telephone" name="phone" placeholder="123456789098" required></label>
+                        <label class="top">Zipcode* <input type="number" name="zipcode" minlength="5" required></label>
+                        <label class="top">Storm Date <input type="date" name="storm-date"></label>
+                        <label class="top">Storm Type <input list="storm-types" name="storm-type">
+                            <datalist id="storm-type">
+                                <option value="Flash Flood"></option>
+                                <option value="Hail"></option>
+                                <option value="Hurricane"></option>
+                                <option value="Thunderstorm"></option>
+                                <option value="Tornado"></option>
+                            </datalist>
+                        </label>
+                        <label class="flexly top" for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue">5</span>
+                        </label>
+                
+                        <datalist id="tickmarks">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
                         </datalist>
-                    </label>
-                    <label class="flexly" for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
-                    </label>
-            
-                    <datalist id="tickmarks">
-                        <option value="0">
-                        <option value="1">
-                        <option value="2">
-                        <option value="3">
-                        <option value="4">
-                        <option value="5">
-                        <option value="6">
-                        <option value="7">
-                        <option value="8">
-                        <option value="9">
-                        <option value="10">
-                    </datalist>
-                    <select name="region" id="selectregion" onchange="selectResponse()">
-                        <option value="" disabled selected>Select a Region ...</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                        <option value="Soda Springs">Soda Springs</option>
-                    </select></label>
-                    <legend>User in-danger <em>(Choose one)</em></legend>
-                    <div class="selection">
-                        <input type="radio" name="danger-level" id="yes" value="Yes" checked>
-                        <label for="yes">Yes</label>
-                        <input type="radio" name="danger-level" id="no" value="no">
-                        <label for="no">No</label>
-                        <input type="radio" id="maybe" name="danger-level" value="maybe">
-                        <label for="time3">Maybe</label>
-                    </div>
-                    <label>Additional Information and Comments <input type="textarea" name="comments"></label>
-                    <label>Send Storm Report <input type="submit" name="submit-button"></label>
-                </fieldset>
-            </form>
+                        <label class="top">
+                            <select class="region" name="region" id="selectregion" onchange="selectResponse()">
+                                <option value="" disabled selected>Select a Region ...</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                            </select>
+                        </label>
+                        <label class="sbs">User In-Danger? <em>(Choose one)</em>
+                            <!-- <div class="selection"> -->
+                                <label for="yes">Yes<input type="radio" name="danger-level" id="yes" value="Yes" checked></label>
+                                <label for="no">No<input type="radio" name="danger-level" id="no" value="no"></label>
+                                <label for="maybe">Maybe<input type="radio" id="maybe" name="danger-level" value="maybe">
+                                </label>
+                            <!-- </div> -->
+                        </label>
+                        <label class="top">Additional Information and Comments <input type="textarea" name="comments"></label>
+                        <label><input class="submitBtn" type="submit" value="Send Storm Report" name="submit-button"></label>
+                    </fieldset>
+                </form>
+        </div>
     </main>
     <footer>
         &copy; <span> ID Relevents 2021 </span> | Jessica Robertson | <a href="images/attributions"> Attributions</a> | <date></date>

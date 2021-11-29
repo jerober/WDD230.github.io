@@ -94,6 +94,54 @@ main {
 .storm-form {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 1rem 1rem 1rem;
+    width: 100%;
+}
+
+.formdiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 10%;
+}
+
+.formdiv h2 {
+    margin-left: 5%;
+}
+
+label {
+    display: block;
+    padding: 10px 2rem 10px 10px;
+}
+
+label input, .region {
+    /* -webkit-appearance: none; */
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #212121;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+legend {
+    padding: 1rem;
+}
+
+.sbs {
+    display: block;
+}
+
+.submitBtn {
+    border: none;
+    background-color: #212121;
+    color: #f6f6f6;
+    border-radius: 1.5rem;
+    width: 80%;
+    max-width: 20rem;
+    margin-left: 15%;
 }
 
 .galleryImg {

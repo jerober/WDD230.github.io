@@ -10,5 +10,20 @@
     .imgCaption {
         width: 30%;
     }
+    label {
+        display: block;
+        padding: 10px 20rem 10px 10px;
+    }
 
+    .formdiv {
+        margin-left: 25%;
+    }
+    
+    .formdiv h2 {
+        margin-left: 20%;
+    }
+
+    .submitBtn {
+        margin-left: 55%;
+    }
 }

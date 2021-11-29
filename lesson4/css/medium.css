@@ -11,5 +11,21 @@
         width: 50%;
     }
 
+    label {
+        display: block;
+        padding: 10px 10rem 10px 10px;
+    }
+
+    .formdiv {
+        margin-left: 15%;
+    }
+
+    .formdiv h2 {
+        margin-left: 20%;
+    }
+
+    .submitBtn {
+        margin-left: 35%;
+    }
 
 }
