@@ -7,6 +7,12 @@
         display: none;
     }
 
+    .weatherSummary .overlay {
+        position: absolute;
+        top: 9rem;
+        left: 4rem;
+    }
+
     .forecast {
         display: flex;
         flex-wrap: wrap;

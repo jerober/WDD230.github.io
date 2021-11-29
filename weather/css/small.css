@@ -90,14 +90,14 @@ header img {
 .weatherSummary img {
     position: relative;
     width: 100%;
-    height: 25rem;
+    height: auto;
 }
 
 .weatherSummary .overlay {
     position: absolute;
     padding: 15px;
-    top: 9rem;
-    left: 5rem;
+    top: 3rem;
+    left: 2rem;
     background-color: #f6f6f6;
     box-shadow: 1px 1px 8px #000;
 }
