@@ -6,9 +6,9 @@ const imgOptions = {
 };
 
 
-const loadImages = (image) => {
-    image.setAttribute("src", image.getAttribute('data-src'));
-    image.onload = () => {image.removeAttribute('data-src');};
+const loadImages = (img) => {
+    img.setAttribute("src", img.getAttribute('data-src'));
+    img.onload = (img) => {img.removeAttribute('data-src');};
 };
 
 imagesToLoad.forEach((img) => {

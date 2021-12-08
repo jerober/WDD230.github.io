@@ -1,6 +1,6 @@
 // Responsive hamburger menu
 function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+    document.getElementsByClassName("navigation")[1].classList.toggle("responsive");
     
     }
     

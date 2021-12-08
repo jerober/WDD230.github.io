@@ -39,7 +39,7 @@
             <h2>Please Fill Out This Form</h2>
                 <form class="storm-form" action="get" action="lesson4/thanks.html">
                     <fieldset>
-                        <label class="top"> Full Name* <input type="text" name="fname" placeholder="Jane Doe" minlength="5" required></label>
+                        <label class="top"> Full Name* <input type="text" name="fname" placeholder="Jane Doe" pattern=".{5,}" required></label>
                         <label class="top"> Email* <input type="email" name="email" placeholder="someone@email.com" required></label>
                         <label class="top"> Phone* <input type="telephone" name="phone" placeholder="123456789098" required></label>
                         <label class="top">Zipcode* <input type="number" name="zipcode" minlength="5" required></label>
