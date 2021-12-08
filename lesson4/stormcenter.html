@@ -37,14 +37,14 @@
         <h1>Storm Center</h1>
         <div class="formdiv">
             <h2>Please Fill Out This Form</h2>
-                <form class="storm-form" action="get" action="lesson4/thanks.html">
+                <form class="storm-form" action="get" action="thanks.html">
                     <fieldset>
                         <label class="top"> Full Name* <input type="text" name="fname" placeholder="Jane Doe" pattern=".{5,}" required></label>
                         <label class="top"> Email* <input type="email" name="email" placeholder="someone@email.com" required></label>
                         <label class="top"> Phone* <input type="tel" name="phone" placeholder="123456789098" required></label>
-                        <label class="top">Zipcode* <input type="number" name="zipcode" pattern=".{5,}" required></label>
+                        <label class="top">Zipcode* <input type="number" name="zipcode" minlength=".{5,}" required></label>
                         <label class="top">Storm Date <input type="date" name="storm-date"></label>
-                        <label class="top">Storm Type <input list="storm-types" name="storm-type">
+                        <label class="top">Storm Type <input list="storm-type" name="storm-type">
                             <datalist id="storm-type">
                                 <option value="Flash Flood"></option>
                                 <option value="Hail"></option>
@@ -57,7 +57,6 @@
                             <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                             <span id="ratingvalue">5</span>
                         </label>
-                
                         <datalist id="tickmarks">
                             <option value="0">
                             <option value="1">
@@ -79,7 +78,8 @@
                                 <option value="Soda Springs">Soda Springs</option>
                             </select>
                         </label>
-                        <section class="sbs">User In-Danger? <em>(Choose one)</em>
+                        <section class="sbs">
+                            <h3>User In-Danger? <em>(Choose one)</em></h3>
                             <!-- <div class="selection"> -->
                                 <label for="yes">Yes<input type="radio" name="danger-level" id="yes" value="Yes" checked></label>
                                 <label for="no">No<input type="radio" name="danger-level" id="no" value="no"></label>
@@ -87,7 +87,7 @@
                                 </label>
                             <!-- </div> -->
                         </section>
-                        <label class="top">Additional Information and Comments <input type="textarea" name="comments"></label>
+                        <label class="top">Additional Information and Comments <input type="text" name="comments"></label>
                         <label><input class="submitBtn" type="submit" value="Send Storm Report" name="submit-button"></label>
                     </fieldset>
                 </form>
