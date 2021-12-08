@@ -21,10 +21,10 @@ fetch(requestURL)
             p.textContent = 'Year Founded: ' + towns[i].yearFounded;
             card.appendChild(p);
             let p2 = document.createElement('p');
-            p.textContent = 'Population: ' + towns[i].currentPopulation;
+            p2.textContent = 'Population: ' + towns[i].currentPopulation;
             card.appendChild(p2);
             let p3 = document.createElement('p');
-            p.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+            p3.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
             card.appendChild(p3);
         }
     });
