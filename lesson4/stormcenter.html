@@ -41,8 +41,8 @@
                     <fieldset>
                         <label class="top"> Full Name* <input type="text" name="fname" placeholder="Jane Doe" pattern=".{5,}" required></label>
                         <label class="top"> Email* <input type="email" name="email" placeholder="someone@email.com" required></label>
-                        <label class="top"> Phone* <input type="telephone" name="phone" placeholder="123456789098" required></label>
-                        <label class="top">Zipcode* <input type="number" name="zipcode" minlength="5" required></label>
+                        <label class="top"> Phone* <input type="tel" name="phone" placeholder="123456789098" required></label>
+                        <label class="top">Zipcode* <input type="number" name="zipcode" pattern=".{5,}" required></label>
                         <label class="top">Storm Date <input type="date" name="storm-date"></label>
                         <label class="top">Storm Type <input list="storm-types" name="storm-type">
                             <datalist id="storm-type">
@@ -79,14 +79,14 @@
                                 <option value="Soda Springs">Soda Springs</option>
                             </select>
                         </label>
-                        <label class="sbs">User In-Danger? <em>(Choose one)</em>
+                        <section class="sbs">User In-Danger? <em>(Choose one)</em>
                             <!-- <div class="selection"> -->
                                 <label for="yes">Yes<input type="radio" name="danger-level" id="yes" value="Yes" checked></label>
                                 <label for="no">No<input type="radio" name="danger-level" id="no" value="no"></label>
                                 <label for="maybe">Maybe<input type="radio" id="maybe" name="danger-level" value="maybe">
                                 </label>
                             <!-- </div> -->
-                        </label>
+                        </section>
                         <label class="top">Additional Information and Comments <input type="textarea" name="comments"></label>
                         <label><input class="submitBtn" type="submit" value="Send Storm Report" name="submit-button"></label>
                     </fieldset>
