@@ -16,10 +16,6 @@ fetch(requestURL)
             let birthdate = document.createElement('p');
             birthdate.textContent = prophets[i].birthdate + ' ' + prophets[i].birthdate;
             card.appendChild(birthdate);
-            let img = document.createElement('img');
-            img.setAttribute('src', prophets[i].imageurl);
-            img.setAttribute('alt', prophets[i].name + ' ' + prophets[i] + ' - ' + i);
-            card.appendChild(img);
         }
     });
 
