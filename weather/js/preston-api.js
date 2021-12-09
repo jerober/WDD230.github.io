@@ -36,7 +36,7 @@
     }
     
     fetch(weatherURL)
-        .then((response) => response.json())
+        .then((response) => console.log(response.json()))
         .then((data) => {
             document.getElementById('temp').innerText = Math.round(data.main.temp);
             document.getElementById('high').innerText = Math.round(data.main.temp_max);

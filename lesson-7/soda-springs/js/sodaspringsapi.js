@@ -1,6 +1,6 @@
 
-const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=8dd97b200c8afe4ed2b4724eaee03d91&lang=en&units=imperial"
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=8dd97b200c8afe4ed2b4724eaee03d91&lang=en&units=imperial"
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=8dd97b200c8afe4ed2b4724eaee03d91&lang=en&units=imperial"
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=8dd97b200c8afe4ed2b4724eaee03d91&lang=en&units=imperial"
 
 fetch(weatherURL) .then(response => response.json())
 .then(data => {
