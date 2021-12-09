@@ -1,0 +1,125 @@
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+main h1{
+    text-align: center;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #f6f6f6;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #212121;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #f6f6f6;
+    padding: 5%;
+}
+
+nav a:link {
+	padding: 0.75rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #212121;
+    background-color: #f6f6f6;
+}
+
+nav ul li.active a{
+    color: #212121;
+    background-color: #f6f6f6;
+}
+
+nav ul.responsive {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #f6f6f6;
+    background-color: #212121;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2pt;
+}
+
+.slogan{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: .75rem;
+}
+
+header img {
+    width: 64px;
+    height: auto;
+    padding: 10%;
+}
+
+.navigation div {
+    display: block;
+}
+
+main {
+    position: relative;
+    align-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.cards section {
+    display: block;
+    border: 4px #212121;
+    border-style: solid;
+    text-align: center;
+    margin: 0 20px 20px;
+    height: auto;
+    width: 90%;
+}
+
+.cards img {
+    width: 90%;
+    height: auto;
+    margin: 0 0 2% 5%;
+    box-shadow: 3px 3px 6px #888;
+}
+
+footer {
+    display: flex;
+    padding: 15px;
+    color: #f6f6f6;
+    background-color: #212121;
+    justify-content: center;
+}
+
+.footer-date {
+    color: #f6f6f6;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f6f6f6;
+}

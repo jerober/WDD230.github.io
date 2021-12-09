@@ -1,0 +1,21 @@
+@media only screen and (min-width: 32.5em) {
+    nav ul.responsive {
+        display: flex;
+    }
+
+    .navigation div {
+        display: none;
+    }
+
+    table.table.table-bordered.table-dark.responsive {
+        display: table;
+    }
+
+    .article {
+        display: flex;
+    }
+
+    .article p {
+        padding: 6rem 3rem 3rem 3rem;
+    }
+}

@@ -1,0 +1,25 @@
+@media only screen and (min-width: 60em) {
+    nav ul.responsive {
+        display: flex;
+    }
+
+    .navigation div {
+        display: none;
+    }
+
+    .cards {
+        margin-left:7rem;
+    }
+
+    .cards img {
+        width: 30%;
+        height: auto;
+        margin: 0 1% 2%;
+    }
+
+    .cards section {
+        height: auto;
+        width: 25%;
+        padding:20px;
+    }
+}

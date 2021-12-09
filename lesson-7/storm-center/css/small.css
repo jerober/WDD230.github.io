@@ -1,0 +1,187 @@
+h1, h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+main h1{
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #f6f6f6;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #212121;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #f6f6f6;
+    padding: 5%;
+}
+
+nav a:link {
+	padding: 0.75rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #212121;
+    background-color: #f6f6f6;
+}
+
+nav ul li.active a{
+    color: #212121;
+    background-color: #f6f6f6;
+}
+
+nav ul.responsive {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #f6f6f6;
+    background-color: #212121;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2pt;
+}
+
+.slogan{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: .75rem;
+}
+
+header img {
+    width: 64px;
+    height: auto;
+    padding: 10%;
+}
+
+.flexly {
+	display: flex;
+	align-items: center;
+}
+
+.navigation div {
+    display: block;
+}
+
+main {
+    position: relative;
+    align-content: center;
+}
+
+.storm-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem 1rem 1rem;
+    width: 100%;
+}
+
+.formdiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 10%;
+}
+
+.formdiv h2 {
+    margin-left: 5%;
+}
+
+label {
+    display: block;
+    padding: 10px 2rem 10px 10px;
+}
+
+label input, .region {
+    /* -webkit-appearance: none; */
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #212121;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+legend {
+    padding: 1rem;
+}
+
+.sbs {
+    display: block;
+}
+
+.submitBtn {
+    border: none;
+    background-color: #212121;
+    color: #f6f6f6;
+    border-radius: 1.5rem;
+    width: 80%;
+    max-width: 20rem;
+    margin-left: 15%;
+}
+
+.galleryImg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main img {
+    display: flex;
+    flex:  1 0 21%;
+    width: 100%;
+    height: auto;
+    margin: 15px;
+}
+
+main img:hover {
+    box-shadow: 3px 3px 6px #888;
+}
+
+.imgCaption {
+    display: block;
+    width: 100%;
+    margin: 20px;
+    align-content: center;
+}
+
+.imgCaption p {
+    text-align: center;
+    margin-left: 10px;
+}
+
+footer {
+    display: flex;
+    padding: 15px;
+    color: #f6f6f6;
+    background-color: #212121;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f6f6f6;
+}

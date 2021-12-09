@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="home for site plan">
+    <title>Preston, ID</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <header>
+        <div class="banner"></div>
+        <section class="slogan">
+            <img src="images/sun.png" alt="logo-img">
+            <div>
+                <h2>Idaho Relevents</h2>
+                <p>Your One-Stop News Shop</p>
+            </div>
+        </section>
+        <nav class="navigation">
+            <div onclick="toggleMenu()"><a href="#">&equiv; Menu</a></div>
+            <ul class="responsive">
+                <li><a href="../home/index.html">Home</a></li>
+                <li class="active"><a href="../preston/preston.html">Preston</a></li>
+                <li><a href="../fish-haven/fishhaven.html">Fish Haven</a></li>
+                <li><a href="../soda-springs/sodasprings.html">Soda Springs</a></li>
+                <li><a href="../storm-center/stormcenter.html">Storm Center</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Preston Idaho</h1>
+        <div class="weatherSummary">
+            <picture>
+                <source srcset="images/idaho-ariel-sm.jpg" media="(max-width: 600px)">
+                <source srcset="images/idaho-ariel-md.jpg" media="(max-width: 800px)">
+                <source srcset="images/idaho-ariel-big.jpg" media="(max-width: 1600px)">
+                <img src="images/idaho-ariel.jpg" alt="preston-header-img">
+            </picture>
+            
+            <section class="overlay">
+                <h2>Today's Weather</h2>
+                <p>Currently: <span class="temp">49</span></p>
+                <p>High: 73</p>
+                <p>Wind Chill: <span class="windChill"></span> </p>
+                <p>Humidity: 19%</p>
+                <p>Wind Speed: <span class="windSpeed">14</span> mph</p>
+            </section>
+        </div>
+        <table class="table table-bordered table-dark responsive">
+            <thead>
+                <tr>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="article">
+            <h3>News</h3>
+            <picture>
+                <source srcset="images/atv-small.jpg" media="(min-width: 400px)">
+                <source srcset="images/atv-medium.jpg" media="(min-width: 800px)">
+                <source srcset="images/atv-large.jpg" media="(min-width: 1000px)">
+                <img src="images/atv.jpg" alt="atv-article-img">
+            </picture>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius et sem mollis pulvinar. Donec semper eros eget dui placerat fringilla. Donec elit ante, faucibus id diam vitae, ornare congue orci. Cras justo justo, suscipit ac congue ac, varius a tortor. Fusce gravida massa eget massa tempor, vel malesuada massa luctus. Praesent sed orci commodo odio cursus gravida. Praesent mollis sapien aliquam, feugiat orci in, maximus ipsum. Nulla facilisi. Donec ullamcorper, mi non auctor ultrices, urna mi gravida ipsum, quis laoreet magna elit in massa. Pellentesque mollis velit at neque auctor, in pulvinar lacus dignissim. Curabitur congue dui quis libero fermentum ultricies. In a convallis felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque non nulla ac velit tristique mattis quis quis urna. Integer ut est efficitur dui laoreet pretium nec sit amet nibh. Morbi ut ullamcorper magna. <a href="https://www.lipsum.com/feed/html">Full Article</a></p>
+        </div>
+        <div class="event">
+            <h2>Events</h2>
+            <br>
+        </div>
+        <div class="contact">
+            <h3>Contact Information</h3>
+            <p>🗺 Preston, ID 82365</p>
+            <p>📞 999.999.9999</p>
+            <p>✉ preston@idrelevents.com</p>
+        </div>
+    </main>
+    <footer>
+        &copy; <span> ID Relevents 2021 </span> | Jessica Robertson | <a href="images/attributions"> Attributions</a>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/prestonevents.js"></script>
+    <script src="js/font-loader.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+</html>
