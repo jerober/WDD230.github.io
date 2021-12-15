@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact</title>
+        <meta name="description" content="Contact Scoots">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/large.css">
+        <link rel="stylesheet" href="./css/medium.css">
+        <link rel="stylesheet" href="./css/small.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../home/home.html">Scoots Co.</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home/home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../rentals/rentals.html">Rentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tours/tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../reservations/reservations.html">Reservations</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../contact/contact.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                </nav>
+        </header>
+        <main>
+            <h1>Contact Us</h1>
+            <div class="formdiv">
+                <form class="contact-form" action="thanks.html">
+                    <fieldset>
+                        <label class="top"> Full Name* <input type="text" name="fname" placeholder="Jane Doe" pattern=".{5,}" required></label>
+                        <label class="top"> Email* <input type="email" name="email" placeholder="someone@email.com" required></label>
+                        <label class="top"> Phone* <input type="tel" name="phone" placeholder="123456789098" required></label>
+                        <label class="top"> Today's Date <input type="date" name="current-date"></label>
+                        </label>
+                        <label class="top"> Scoots Location <input list="location" name="location">
+                            <datalist id="location">
+                                <option value="Near Terminal Puerta Maya"></option>
+                                <option value="Near Playa del Carmen-Cozumel Ferry dock"></option>
+                            </datalist>
+                        </label>
+                        <label class="top">Message<input type="text" name="comments"></label>
+                        <label><input class="submitBtn" type="submit" value="Send Message" name="submit-button"></label>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="playa-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d119576.43753862333!2d-86.981648!3d20.515912!3m2!1i1024!2i768!4f13.1!2m1!1sAv.%20Rafael%20E.%20Melgar%2C%20Centro%2C%2077600%20%3Cbr%3E%20San%20Miguel%20de%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1639531251238!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <section>
+                    <h2>Scoots Co. at la Playa</h2>
+                    <p>Av. Rafael E. Melgar, Centro, 77600 <br> San Miguel de Cozumel, Q.R., Mexico <br> Phone: +52 987 872 0833 <br> scoots@scoots.com</p>
+                </section>
+            </div>
+            <div class="terminal-location">
+                <section>
+                    <h2>Scoots Co. at la Terminal</h2>
+                    <p>Carretera Chankanaab km 4.5, Carr. Costera Sur, 77600 <br> San Miguel de Cozumel, Q.R., Mexico <br> Phone: +52 987 869 1984 <br> scoots@scoots.com</p>
+                </section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d59806.936365221234!2d-86.98329143314406!3d20.467923386304907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1639531500239!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </main>
+        <footer>
+            <section>
+                <h3>Contact Us</h3>
+                <p>Av. Rafael E. Melgar, Centro, 77600 <br> San Miguel de Cozumel, Q.R., Mexico <br> Phone: +52 987 872 0833<br> &copy; <span id="year"></span> Scoots Co.</p>
+            </section>
+            <section class="social-links">
+                <a href="https://www.facebook.com/"><img src="../images/facebook.png" alt="facebook-icon"></a>
+                <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="instagram-icon"></a>
+                <a href="https://twitter.com/"><img src="../images/twitter.png" alt="twitter-icon"></a>
+            </section>
+        </footer>
+        <script src="js/font-loader.js"></script>
+        <script src="js/date.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

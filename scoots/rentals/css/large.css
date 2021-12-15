@@ -1,0 +1,42 @@
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.rental-info {
+    background-color: #89B5AF;
+    color: #f6f6f6;
+    padding: 20px;
+    margin: 20px;
+}
+
+.rental-table {
+    margin: 0 20px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #89B5AF;
+    color: #f6f6f6;
+    justify-content: left;
+}
+
+footer img {
+    width: 2rem;
+    height: auto;
+    /* margin: 0 5px; */
+}
+
+footer section {
+    padding: 20px 0 20px 20px;
+    width: 30%;
+    align-items: top;
+}
+
+footer section.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    align-self: center;
+    justify-self: right;
+}

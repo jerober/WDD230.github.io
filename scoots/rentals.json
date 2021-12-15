@@ -1,0 +1,52 @@
+{
+  "tours": [
+    {
+      "name": "Honda Metro Scooter",
+      "max-people": "1",
+      "half-reservation-fee": "$20",
+      "full-reservation-fee": "$30",
+      "half-walk-in-fee": "$25",
+      "full-walk-in-fee": "$25"
+    },
+    {
+      "name": "Honda Dio Scooter",
+      "max-people": "2",
+      "half-reservation-fee": "$30",
+      "full-reservation-fee": "$40",
+      "half-walk-in-fee": "$35",
+      "full-walk-in-fee": "$45"
+    },
+    {
+      "name": "Honda PCX150 Scooter",
+      "max-people": "2",
+      "half-reservation-fee": "$40",
+      "full-reservation-fee": "$50",
+      "half-walk-in-fee": "$45",
+      "full-walk-in-fee": "$55"
+    },
+    {
+      "name": "Honda Pioneer ATV",
+      "max-people": "4",
+      "half-reservation-fee": "$50",
+      "full-reservation-fee": "$70",
+      "half-walk-in-fee": "$60",
+      "full-walk-in-fee": "$80"
+    },
+    {
+      "name": "Jeep Wrangler - 4 door with a/c",
+      "max-people": "5",
+      "half-reservation-fee": "$70",
+      "full-reservation-fee": "$100",
+      "half-walk-in-fee": "$85",
+      "full-walk-in-fee": "$125"
+    },
+    {
+      "name": "Jeep Wrangler - 2 door",
+      "max-people": "4",
+      "half-reservation-fee": "$60",
+      "full-reservation-fee": "$85",
+      "half-walk-in-fee": "$70",
+      "full-walk-in-fee": "$90"
+    }
+  ]
+}

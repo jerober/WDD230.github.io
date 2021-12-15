@@ -1,0 +1,25 @@
+@media only screen and (max-width: 32.5em) {  
+    .jeep-tour, .city-tour, .beach-tour {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .jeep-tour p, .city-tour p, .beach-tour p {
+        padding-top: 20px;
+    }
+
+    .jeep-tour img, .city-tour img, .beach-tour img{
+        margin-left: 10%;
+    }
+
+    footer section.social-links {
+        display: grid;
+        grid-template-columns: repeat(3, 3rem);
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}

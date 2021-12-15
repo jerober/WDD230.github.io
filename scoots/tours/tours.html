@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tours</title>
+        <meta name="description" content="Scoots Tours">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/large.css">
+        <link rel="stylesheet" href="./css/medium.css">
+        <link rel="stylesheet" href="./css/small.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="../home/home.html">Scoots Co.</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home/home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../rentals/rentals.html">Rentals</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../tours/tours.html">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../reservations/reservations.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact/contact.html">Contact</a>
+                    </li>
+                    </ul>
+                </div>
+                </nav>
+        </header>
+        <main>
+            <div class="jeep-tour">
+                <picture>
+                    <source srcset="../images/home-sm.jpg" media="(max-width: 600px)">
+                    <source srcset="../images/home-md.jpg" media="(max-width: 800px)">
+                    <source srcset="../images/home-bg.jpg" media="(max-width: 1600px)">
+                    <img src="../images/home-bg.jpg" alt="jeep-img">
+                </picture>
+                <p>Jeep Tour: <br><br> Explore everything that Cozumel has to offer, from the lush beaches to the vibrant jungles. Relax with only the company of your own friends and family. Your adventure in your own private jeep allows you the freedom to explore at your own pace. Spend all day spinning your wheels in the sand. Or take to the jungle to see the Myan ruins. Take a break to learn about the history of the geography that sourrounds you. Take a moment to go out on foot and canvas the beauty of the Mexican jungle. Then head back to town where you can find food to curb all cravings. Wheather its the beauty of the beach or the joy of the jungle, you are sure to enjoy your private, self-guided Jeep tour.</p>
+            </div>
+            <div class="city-tour">
+                <p>City Tour: <br><br> The small city of Cozumel is vastly underrated. Here you can really dive into the best culture and food that Cozumel has to offer. From botique restaurants, that will leave you feeling full and included, to the upbeat night life, that is sure to make your stay memorable, you are sure to love this tour through the city. Along the route our guides will take you to the local museum, the docks, and the city center. If gifts to take home is what you want, then make this tour a part of your stay. The city center is full of shopping consisting of hand crafted clothes and trinckets to match anyone's fancy.</p>
+                <picture>
+                    <source srcset="../images/tours-city-sm.jpg" media="(max-width: 600px)">
+                    <source srcset="../images/tours-city-md.jpg" media="(max-width: 800px)">
+                    <source srcset="../images/tours-city-bg.jpg" media="(max-width: 1600px)">
+                    <img src="../images/tours-city-bg.jpg" alt="city-center-img">
+                </picture>
+            </div>
+            <div class="beach-tour">
+                <picture>
+                    <source srcset="../images/tours-beach-sm.jpg" media="(max-width: 600px)">
+                    <source srcset="../images/tours-beach-md.jpg" media="(max-width: 800px)">
+                    <source srcset="../images/tours-beach-bg.jpg" media="(max-width: 1600px)">
+                    <img src="../images/tours-beach-bg.jpg" alt="beach-img">
+                </picture>
+                <p>Beach Tour: <br><br> Enjoy a section of private beach where the options include sun, sand, and surf. Relax on the beautiful white sand beaches with your favorite company. Spend the day with your toes in the sand or wade out to the Carribean blue water. You can body surf the waves as you make your way back to the shore for a well earned lunch. Then grab your snorkle gear and swim back out to the reef where you can see schools of fish doing their fish thing. Take underwater pictures through the clear water of the amazing world found under the sea.</p>
+            </div>
+        </main>
+        <footer>
+            <section>
+                <h3>Contact Us</h3>
+                <p>Carretera Chankanaab km 4.5, Carr. Costera Sur, 77600 <br> San Miguel de Cozumel, Q.R., Mexico <br> Phone: +52 987 872 0833 <br> &copy; <span id="year"></span> Scoots Co.</p>
+            </section>
+            <section class="social-links">
+                <a href="https://www.facebook.com/"><img src="../images/facebook.png" alt="facebook-icon"></a>
+                <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt="instagram-icon"></a>
+                <a href="https://twitter.com/"><img src="../images/twitter.png" alt="twitter-icon"></a>
+            </section>
+        </footer>
+        <script src="js/font-loader.js"></script>
+        <script src="js/date.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

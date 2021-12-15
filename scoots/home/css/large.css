@@ -1,0 +1,92 @@
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: #f6f6f6;
+}
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #89B5AF;
+    z-index: 200;
+    } */
+
+main {
+    padding: 20px;
+}
+
+.bg-dark {
+    background-color: #89B5AF;
+    }
+
+main div.home-rental {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 20px;
+}
+
+.home-rental img {
+    width: 80%;
+    height:auto;
+    margin-left: 20%;
+}
+
+main div.home-rental button {
+    align-content: center;
+}
+
+main div.home-weather {
+    padding: 20px 20px;
+}
+
+.current-weather {
+    padding: 15px;
+    margin: 20px 0;
+    top: 3rem;
+    left: 2rem;
+    background-color: #96c7c1;
+    color: #ffffff;
+    box-shadow: 1px 1px 8px #000;
+}
+
+.current-weather p {
+    margin-bottom: 2px;
+}
+
+main div.head-section-one img {
+    width: 100%;
+    height: auto;
+}
+
+main div.home-rental {
+    background-color: #89B5AF;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #89B5AF;
+    color: #ffffff;
+    justify-content: left;
+}
+
+footer img {
+    width: 2rem;
+    height: auto;
+    margin: 0 5px;
+}
+
+footer section {
+    padding: 20px 0 20px 20px;
+    width: 30%;
+    align-items: top;
+}
+
+footer section.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    align-self: center;
+    justify-self: right;
+}

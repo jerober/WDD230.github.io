@@ -1,0 +1,108 @@
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.flexly {
+	display: flex;
+	align-items: center;
+}
+
+.navigation div {
+    display: block;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.formdiv {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 10%;
+    justify-self: center;
+    border: 4px #212121;
+    border-style: solid;
+    margin: 20px 30%;
+}
+
+.reservation-form {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+label {
+    display: block;
+    padding: 10px 2rem 10px 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+label input {
+    /* -webkit-appearance: none; */
+    display: block;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #212121;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+
+fieldset {
+    display: grid;
+    justify-content: center;
+}
+
+.submitBtn {
+    display: block;
+    border: none;
+    background-color: #212121;
+    color: #f6f6f6;
+    border-radius: 1.5rem;
+    width: 80%;
+    max-width: 20rem;
+    justify-self: center;
+    margin-left: 10%;
+}
+
+.rental-agreement {
+    margin: 20px
+}
+
+.rental-agreement-home img {
+    width:75%;
+    height: auto;
+}
+
+.rental-agreement-home {
+    margin-left:20%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #89B5AF;
+    color: #ffffff;
+    justify-content: left;
+}
+
+footer img {
+    width: 2rem;
+    height: auto;
+    margin: 0 5px;
+}
+
+footer section {
+    padding: 20px 0 20px 20px;
+    width: 30%;
+    align-items: top;
+}
+
+footer section.social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
+    align-self: center;
+    justify-self: right;
+}

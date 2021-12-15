@@ -1,0 +1,28 @@
+@media only screen and (max-width: 32.5em) {
+    footer section.social-links {
+        display: grid;
+        grid-template-columns: repeat(3, 3rem);
+    }
+    
+    .formdiv {
+        margin: 20px 10%;
+    }
+
+    .playa-location, .terminal-location {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    iframe {
+        max-width: 80%;
+        height: auto;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
