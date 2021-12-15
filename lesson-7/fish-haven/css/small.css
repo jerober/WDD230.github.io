@@ -148,11 +148,17 @@ header img {
 }
 
 .contact {
+    display: grid;
+    grid-template-columns: 1fr;
     border: 4px #212121;
     border-style: solid;
     margin: 1em;
     padding: 2rem;
     text-align: center;
+}
+
+.contact iframe {
+    width: 80%;
 }
 
 footer {
