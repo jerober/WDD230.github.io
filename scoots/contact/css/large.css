@@ -93,7 +93,7 @@ footer img {
 footer section {
     padding: 20px 0 20px 20px;
     width: 30%;
-    align-items: top;
+    align-items: start;
 }
 
 footer section.social-links {
