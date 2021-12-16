@@ -3,31 +3,30 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tours</title>
-        <meta name="description" content="Scoots Tours">
+        <title>Scoots</title>
+        <meta name="description" content="Home for Scoots">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/large.css">
+        <link rel="stylesheet" href="./css/medium.css">
         <link rel="stylesheet" href="./css/small.css">
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="../home/home.html">Scoots Co.</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../home/home.html">Home <span class="sr-only">(current)</span></a>
+            <nav class="navbar">
+                <a class="navbar-brand" href="../home/home.html"> <img src="../images/scooter.png" alt="scooter-icon">Scoots Co.</a>
+                <div class="nav-item responsive">
+                    <a class="nav-link"  onclick="toggleMenu()" href="../home/home.html">&equiv; Menu <span class="sr-only"></span></a>
+                </div>
+                <ul class="navbar-nav responsive">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../home/home.html">Home <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../rentals/rentals.html">Rentals</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="../tours/tours.html">Tours</a>
                     </li>
                     <li class="nav-item">
@@ -36,9 +35,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../contact/contact.html">Contact</a>
                     </li>
-                    </ul>
-                </div>
-                </nav>
+                </ul>
+            </nav>
         </header>
         <main>
             <div class="jeep-tour">
@@ -80,11 +78,9 @@
                 <a href="https://twitter.com/"><img src="../images/twitter.png" alt="twitter-icon"></a>
             </section>
         </footer>
-        <script src="js/font-loader.js"></script>
-        <script src="js/date.js"></script>
+        <script src="./js/font-loader.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/date.js"></script>
+        <script src="./js/weatherapi.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    </body>
 </html>

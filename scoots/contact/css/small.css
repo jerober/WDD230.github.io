@@ -1,4 +1,12 @@
 @media only screen and (max-width: 32.5em) {
+    ul.responsive {
+        display: none;
+    }
+
+    div.responsive {
+        display: block;
+    }
+
     footer section.social-links {
         display: grid;
         grid-template-columns: repeat(3, 3rem);

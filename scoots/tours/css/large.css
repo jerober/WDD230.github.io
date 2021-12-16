@@ -1,6 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #89b5af;
+    padding: 20px;
+}
+
+.navbar img {
+    width: 36px;
+    height: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar-nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5%;
+}
+
+.navbar-brand {
+    margin-top: 2%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.active {
+    font-weight: bolder;
+}
+
+div.responsive {
+    display: none;
+}
+
 body{
     font-family: 'Jost', sans-serif;
     background-color: #f6f6f6;
+    font-size: 1.25rem;
 }
 
 main img {

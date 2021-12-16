@@ -7,7 +7,6 @@
         <meta name="description" content="Home for Scoots">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/large.css">
         <link rel="stylesheet" href="./css/medium.css">
@@ -15,15 +14,14 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="../home/home.html">Scoots Co.</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+            <nav class="navbar">
+                <a class="navbar-brand" href="../home/home.html"> <img src="../images/scooter.png" alt="scooter-icon">Scoots Co.</a>
+                <div class="nav-item responsive">
+                    <a class="nav-link"  onclick="toggleMenu()" href="../home/home.html">&equiv; Menu <span class="sr-only"></span></a>
+                </div>
+                <ul class="navbar-nav responsive">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../home/home.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../home/home.html">Home <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../rentals/rentals.html">Rentals</a>
@@ -37,9 +35,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../contact/contact.html">Contact</a>
                     </li>
-                    </ul>
-                </div>
-                </nav>
+                </ul>
+            </nav>
         </header>
         <main>
             <div class="head-section-one overlay">
@@ -54,7 +51,7 @@
                 <section>
                     <h2>Rentals!</h2>
                     <p>Come explore all that Cozumel has to offer on the back of a vehicle of your choosing. Traverse the rough terrians in our Jeep fit with enough seats for a group of friends. Or spend an afteroon exploring the coastline on the back of one of our scooters. No matter your style, Cozumel is sure to please. Let the wind blow through your hair and the joy course through your veins. </p>
-                    <button onclick="window.location.href='../reservations/reservations.html'" type="button" class="btn btn-dark">Book Now</button>
+                    <button onclick="window.location.href='../reservations/reservations.html'" type="button" class="btn">Book Now</button>
                 </section>
                 <picture>
                     <source srcset="../images/scooter-sm.jpg" media="(max-width: 600px)">
@@ -74,25 +71,22 @@
                     <p>Wind Speed: <span id="windSpeed"></span> mph</p>
                 </section>
                 <section class="forecast-table">
-                <table class="table table-bordered table-dark responsive">
-                    <thead>
+                    <h2>5-Day Forecast</h2>
+                    <table>
                         <tr>
-                        <th id="dayName" scope="col">Monday</th>
-                        <th scope="col">Tuesday</th>
-                        <th scope="col">Wednesday</th>
-                        <th scope="col">Thursday</th>
-                        <th scope="col">Friday</th>
+                            <th id="dayName1"></th>
+                            <th id="dayName2"></th>
+                            <th id="dayName3"></th>
+                            <th id="dayName4"></th>
+                            <th id="dayName5"></th>
                         </tr>
-                    </thead>
-                    <tbody>
                         <tr>
-                        <th id="dayTemp" scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
+                            <th id="dayTemp1"></th>
+                            <th id="dayTemp2"></th>
+                            <th id="dayTemp3"></th>
+                            <th id="dayTemp4"></th>
+                            <th id="dayTemp5"></th>
                         </tr>
-                    </tbody>
                     </table>
                 </section>
             </div>
@@ -110,11 +104,9 @@
             </section>
         </footer>
         <script src="./js/font-loader.js"></script>
+        <script src="./js/index.js"></script>
         <script src="./js/date.js"></script>
         <script src="./js/weatherapi.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

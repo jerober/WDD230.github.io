@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rentals</title>
-        <meta name="description" content="Rental">
+        <title>Scoots</title>
+        <meta name="description" content="Home for Scoots">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/large.css">
         <link rel="stylesheet" href="./css/medium.css">
@@ -15,17 +14,16 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="../home/home.html">Scoots Co.</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../home/home.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
+            <nav class="navbar">
+                <a class="navbar-brand" href="../home/home.html"> <img src="../images/scooter.png" alt="scooter-icon">Scoots Co.</a>
+                <div class="nav-item responsive">
+                    <a class="nav-link"  onclick="toggleMenu()" href="../home/home.html">&equiv; Menu <span class="sr-only"></span></a>
+                </div>
+                <ul class="navbar-nav responsive">
                     <li class="nav-item active">
+                        <a class="nav-link" href="../home/home.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="../rentals/rentals.html">Rentals</a>
                     </li>
                     <li class="nav-item">
@@ -37,12 +35,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../contact/contact.html">Contact</a>
                     </li>
-                    </ul>
-                </div>
-                </nav>
+                </ul>
+            </nav>
         </header>
         <main>
-            <div>
+            <h1>Rental Information</h1>
+            <picture>
+                <source srcset="../images/rental-sm.jpg" media="(max-width: 600px)">
+                <source srcset="../images/rental-md.jpg" media="(max-width: 800px)">
+                <source srcset="../images/rental-bg.jpg" media="(max-width: 1600px)">
+                <img src="../images/rental-bg.jpg" alt="jeep-img">
+            </picture>
+            <div class="rental">
                 <section class="rental-info">
                     <h2>Rental Information</h2>
                     <ul>
@@ -58,28 +62,70 @@
                         <li>Rentals may be returned to either location.</li>
                     </ul>
                 </section>
-                <section class="rental-table">
-                    <table class="table table-bordered table-dark responsive">
+                <div class="rental-table">
+                    <table class="table">
                         <thead>
                             <tr>
-                            <th scope="col">Monday</th>
-                            <th scope="col">Tuesday</th>
-                            <th scope="col">Wednesday</th>
-                            <th scope="col">Thursday</th>
-                            <th scope="col">Friday</th>
+                            <th scope="col">Rental Type</th>
+                            <th scope="col">Max. People</th>
+                            <th scope="col">Half-day (3hrs) with Reservation</th>
+                            <th scope="col">Full-day with Reservation</th>
+                            <th scope="col">Half-day (3hrs) Walk-ins</th>
+                            <th scope="col">Full-day Walk-ins</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <td id="name1" scope="row"></td>
+                            <td id="max1"></td>
+                            <td id="half-reservation-fee1"></td>
+                            <td id="full-reservation-fee1"></td>
+                            <td id="half-walki-in-fee1"></td>
+                            <td id="full-walk-in-fee1"></td>
+                            </tr>
+                            <tr>
+                            <td id="name2" scope="row"></td>
+                            <td id="max2"></td>
+                            <td id="half-reservation-fee2"></td>
+                            <td id="full-reservation-fee2"></td>
+                            <td id="half-walki-in-fee2"></td>
+                            <td id="full-walk-in-fee2"></td>
+                            </tr>
+                            <tr>
+                            <td id="name3" scope="row"></td>
+                            <td id="max3"></td>
+                            <td id="half-reservation-fee3"></td>
+                            <td id="full-reservation-fee3"></td>
+                            <td id="half-walki-in-fee3"></td>
+                            <td id="full-walk-in-fee3"></td>
+                            </tr>
+                            <tr>
+                            <td id="name4" scope="row"></td>
+                            <td id="max4"></td>
+                            <td id="half-reservation-fee4"></td>
+                            <td id="full-reservation-fee4"></td>
+                            <td id="half-walki-in-fee4"></td>
+                            <td id="full-walk-in-fee4"></td>
+                            </tr>
+                            <tr>
+                            <td id="name5" scope="row"></td>
+                            <td id="max5"></td>
+                            <td id="half-reservation-fee5"></td>
+                            <td id="full-reservation-fee5"></td>
+                            <td id="half-walki-in-fee5"></td>
+                            <td id="full-walk-in-fee5"></td>
+                            </tr>
+                            <tr>
+                            <td id="name6" scope="row"></td>
+                            <td id="max6"></td>
+                            <td id="half-reservation-fee6"></td>
+                            <td id="full-reservation-fee6"></td>
+                            <td id="half-walki-in-fee6"></td>
+                            <td id="full-walk-in-fee6"></td>
                             </tr>
                         </tbody>
                         </table>
-                    </section>
+                    </div>
             </div>
         </main>
         <footer>
@@ -93,12 +139,11 @@
                 <a href="https://twitter.com/"><img src="../images/twitter.png" alt="twitter-icon"></a>
             </section>
         </footer>
-        <script src="./js/rental-table.js"></script>
         <script src="./js/font-loader.js"></script>
+        <script src="./js/rental-table.js" type="module"></script>
+        <script src="./js/index.js"></script>
         <script src="./js/date.js"></script>
+        <script src="./js/weatherapi.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

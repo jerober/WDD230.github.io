@@ -1,4 +1,12 @@
-@media only screen and (max-width: 32.5em) {    
+@media only screen and (max-width: 32.5em) {   
+    ul.responsive {
+        display: none;
+    }
+
+    div.responsive {
+        display: block;
+    }
+    
     .formdiv {
         margin: 20px 10%;
     }
