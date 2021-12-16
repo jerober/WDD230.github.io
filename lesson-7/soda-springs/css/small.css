@@ -104,15 +104,19 @@ header img {
     margin: 4px;
 }
 
-.table {
-    width:97%;
-    margin:20px;
-    background-color: #212121;
+table {
+    width: 100%;
 }
 
-.table.responsive {
-    display: none;
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
+
+th, td {
+    padding: 10px;
+}
+
 
 .article {
     display: block;
