@@ -12,49 +12,44 @@ fetch(weatherURL) .then(response => response.json())
     document.getElementById('condition').innerText = currentCondition.charAt(0).toUpperCase() + currentCondition.substring(1);
     })
 
-    .then(() => {
-        temp = parseFloat(document.getElementById("temp").innerText)
-        windSpeed = parseFloat(document.getElementById("windSpeed").innerText)
-        
-        document.getElementById("windChill").innerText = windchill(temp, windSpeed);
-    });
-
+.then(() => {
+    temp = parseFloat(document.getElementById("temp").innerText)
+    windSpeed = parseFloat(document.getElementById("windSpeed").innerText)
+    
+    document.getElementById("windChill").innerText = windchill(temp, windSpeed);
+});
 
 fetch(forecastURL) .then(response => response.json())
 .then(data => {
     newDate = '';
-    weekForecast = {}
+    weekTemp = {};
+    days = [];
 
-    console.log(data)
-
-    weekForecast = Object.assign({}, ...data.list
+    weekTemp = Object.assign(...data.list
         .filter(el => el.dt_txt.indexOf('18:00:00') >= 0)
         .map((el, index) => {
             console.log(el)
                 newDate = new Date(el.dt_txt)
+
+                console.log(newDate.toString().substr(0,3))
+
                 return({
-                    [days[newDate.getDay()] + " " + newDate.getDate()] : Math.round(el.main.temp) 
+                    [newDate.toString().substr(0,3)] : Math.round(el.main.temp) 
                 })
             }       
         ));
 
-        console.log(weekForecast)
-    })
+        console.log(weekTemp)
 
-fetch(forecastURL) .then((response) => response.json())
-    .then((data) => {
-
-    })
-    .then(() =>{
-        let keys =  Object.keys(weekForecast)
-        let values =  Object.values(weekForecast)
-        for(i=0; i< keys.length; i++){
-            document.getElementById("dayName" + (i + 1)).innerText = keys[i];
+        let properties =  Object.keys(weekTemp)
+        let values =  Object.values(weekTemp)
+        console.log(properties, values)
+        for(i=0; i< properties.length; i++){
+            console.log("dayName" + (i + 1))
+            document.getElementById("dayName" + (i + 1)).innerText = properties[i];
             document.getElementById("dayTemp" + (i + 1)).innerText = values[i] + " °F";
         }
-    });
-
-
+    })
     
 function windchill(){    
     let windchill = ''
